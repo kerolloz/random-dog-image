@@ -17,7 +17,8 @@ function getQueryId() {
  */
 function createPermaLink(imageUri) {
   const id = imageUri.match(/breeds\/(.*)/)[1];
-  return `${window.location.origin}?id=${id}`;
+  const url = location.origin + location.pathname;
+  return `${url}?id=${id}`;
 }
 
 /**
