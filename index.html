@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Random dog images" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <title>Random Dog Image</title>
+    <script
+      async
+      src="https://platform.twitter.com/widgets.js"
+      charset="utf-8"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container" id="loading">
+      <h1 class="loading">Loading</h1>
+    </div>
+    <div class="container" id="main-content">
+      <div class="img-container">
+        <img alt="Dog Pic" id="pic" src="" />
+      </div>
+      <div class="m-15 text-center">
+        Breed:
+        <span id="breed"> </span>
+        <br />
+        <a href="" id="perma-link">Sharable permanent link</a>
+      </div>
+      <button id="random-img-btn" onclick="onStart(true)">
+        Random Image
+      </button>
+      <div class="m-15">
+        <button id="fb-share-btn">
+          <img
+            alt="facebook share button"
+            src="https://cdn3.iconfinder.com/data/icons/capsocial-round/500/facebook-512.png"
+          />
+          Share
+        </button>
+        <button id="tweet-btn">
+          <img
+            alt="tweet button"
+            src="https://cdn3.iconfinder.com/data/icons/capsocial-round/500/twitter-512.png"
+          />
+          Tweet
+        </button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

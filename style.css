@@ -1,0 +1,131 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  display: inline-block;
+}
+
+body {
+  background-color: rgba(100, 100, 100, 0.1);
+}
+
+button {
+  background-color: #333;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 8px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button,
+button:active,
+button:focus,
+button::-moz-focus-inner {
+  outline: none; /* Works in Firefox, Chrome, IE8 and above */
+  border: 0;
+}
+
+.container {
+  min-height: 100%;
+  width: 100%;
+  color: #444;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-basis: content;
+  margin: 0;
+  font-size: 1.3rem;
+}
+
+.img-container {
+  max-width: 500px;
+  max-height: min-content;
+  margin: 15px;
+}
+
+.m-15 {
+  margin: 15px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.error {
+  color: rgb(209, 84, 84);
+}
+
+#pic {
+  max-height: 100%;
+  max-width: 100%;
+  border-radius: 5%;
+}
+
+#breed {
+  font-weight: bold;
+}
+
+#fb-share-btn,
+#tweet-btn {
+  padding: 8px;
+}
+
+#fb-share-btn img,
+#tweet-btn img {
+  display: inline-block;
+  vertical-align: middle;
+  width: 20px;
+}
+
+#fb-share-btn {
+  background-color: #44609b;
+}
+
+#tweet-btn {
+  background-color: #56aced;
+}
+
+#random-img-btn:hover {
+  background-color: #222;
+  font-weight: bold;
+}
+
+.loading:after {
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: bottom;
+  -webkit-animation: ellipsis steps(4, end) 900ms infinite;
+  animation: ellipsis steps(4, end) 900ms infinite;
+  content: "\2026"; /* ascii code for the ellipsis character */
+  width: 0;
+}
+
+@keyframes ellipsis {
+  to {
+    width: 1.25em;
+  }
+}
+
+@-webkit-keyframes ellipsis {
+  to {
+    width: 1.25em;
+  }
+}
