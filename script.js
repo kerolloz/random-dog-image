@@ -83,6 +83,7 @@ async function onStart(forceNew = false) {
 
 (() => {
   const img = $("#pic");
+
   img.addEventListener("load", () => {
     showElement("#main-content");
     hideElement("#loading");
@@ -94,12 +95,14 @@ async function onStart(forceNew = false) {
         <small>${getQueryId()}</small>
         `;
   });
-  onStart();
+
+  onStart().catch(console.error);
 
   function share(url, target) {
     const options = "toolbar=0,status=0,resizable=1,width=626,height=436";
     window.open(url, target, options);
   }
+
   $("#fb-share-btn").addEventListener("click", () => {
     const url =
       "https://facebook.com/sharer.php?display=popup&u=" +
@@ -114,7 +117,7 @@ async function onStart(forceNew = false) {
   });
   document.addEventListener("keydown", (e) => {
     if (e.key === "r") {
-      onStart(true);
+      onStart(true).catch(console.error);
     }
   });
 })();
