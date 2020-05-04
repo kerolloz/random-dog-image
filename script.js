@@ -11,7 +11,7 @@ function getQueryId() {
 }
 
 /**
- * returns the perma link string for the page
+ * returns the permanent link string for the page
  * according to the id of the image
  * @param {string} imageUri
  */
@@ -90,7 +90,7 @@ async function onStart(forceNew = false) {
   img.addEventListener("error", () => {
     $("#loading").innerHTML = `
         <h1 class="error">Error</h1>
-        <h2>Faild loading the requested image!</h2>
+        <h2>Failed loading the requested image!</h2>
         <small>${getQueryId()}</small>
         `;
   });
